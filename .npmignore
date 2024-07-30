@@ -25,3 +25,4 @@ coverage
 .npmrc
 junit.xml
 .github
+tsconfig-cjs.json
