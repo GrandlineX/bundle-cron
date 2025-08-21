@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
-<coverage lines-valid="44" lines-covered="39" line-rate="0.8863" branches-valid="4" branches-covered="3" branch-rate="0.75" timestamp="1722359508245" complexity="0" version="0.1">
+<coverage lines-valid="47" lines-covered="41" line-rate="0.8723000000000001" branches-valid="4" branches-covered="3" branch-rate="0.75" timestamp="1755770928307" complexity="0" version="0.1">
   <sources>
     <source>/home/runner/work/bundle-cron/bundle-cron</source>
   </sources>
@@ -11,27 +11,29 @@
           <methods>
             <method name="(anonymous_1)" hits="1" signature="()V">
               <lines>
-                <line number="11" hits="1"/>
+                <line number="17" hits="1"/>
               </lines>
             </method>
             <method name="(anonymous_2)" hits="1" signature="()V">
               <lines>
-                <line number="15" hits="1"/>
+                <line number="23" hits="1"/>
               </lines>
             </method>
             <method name="(anonymous_3)" hits="1" signature="()V">
               <lines>
-                <line number="19" hits="1"/>
+                <line number="27" hits="1"/>
               </lines>
             </method>
           </methods>
           <lines>
             <line number="1" hits="1" branch="false"/>
-            <line number="2" hits="1" branch="false"/>
-            <line number="4" hits="1" branch="false"/>
-            <line number="12" hits="1" branch="false"/>
-            <line number="16" hits="1" branch="false"/>
+            <line number="6" hits="1" branch="false"/>
+            <line number="8" hits="1" branch="false"/>
+            <line number="18" hits="1" branch="false"/>
+            <line number="19" hits="1" branch="false"/>
             <line number="20" hits="1" branch="false"/>
+            <line number="24" hits="1" branch="false"/>
+            <line number="28" hits="1" branch="false"/>
           </lines>
         </class>
         <class name="index.ts" filename="src/index.ts" line-rate="1" branch-rate="1">
@@ -47,44 +49,50 @@
         </class>
       </classes>
     </package>
-    <package name="src.client" line-rate="0.9166" branch-rate="0.5">
+    <package name="src.client" line-rate="0.8461" branch-rate="0.5">
       <classes>
-        <class name="CronClient.ts" filename="src/client/CronClient.ts" line-rate="0.9166" branch-rate="0.5">
+        <class name="CronClient.ts" filename="src/client/CronClient.ts" line-rate="0.8461" branch-rate="0.5">
           <methods>
-            <method name="(anonymous_0)" hits="1" signature="()V">
+            <method name="(anonymous_0)" hits="2" signature="()V">
               <lines>
-                <line number="7" hits="1"/>
+                <line number="13" hits="2"/>
               </lines>
             </method>
             <method name="(anonymous_1)" hits="1" signature="()V">
               <lines>
-                <line number="13" hits="1"/>
+                <line number="19" hits="1"/>
               </lines>
             </method>
             <method name="(anonymous_2)" hits="1" signature="()V">
               <lines>
-                <line number="17" hits="1"/>
+                <line number="23" hits="1"/>
               </lines>
             </method>
             <method name="(anonymous_3)" hits="1" signature="()V">
               <lines>
-                <line number="27" hits="1"/>
+                <line number="33" hits="1"/>
+              </lines>
+            </method>
+            <method name="(anonymous_4)" hits="0" signature="()V">
+              <lines>
+                <line number="37" hits="0"/>
               </lines>
             </method>
           </methods>
           <lines>
             <line number="1" hits="1" branch="false"/>
-            <line number="2" hits="1" branch="false"/>
-            <line number="4" hits="1" branch="false"/>
             <line number="8" hits="1" branch="false"/>
-            <line number="9" hits="1" branch="false"/>
             <line number="10" hits="1" branch="false"/>
-            <line number="14" hits="1" branch="false"/>
-            <line number="18" hits="1" branch="true" condition-coverage="50% (1/2)"/>
-            <line number="19" hits="1" branch="false"/>
+            <line number="14" hits="2" branch="false"/>
+            <line number="15" hits="2" branch="false"/>
+            <line number="16" hits="2" branch="false"/>
             <line number="20" hits="1" branch="false"/>
-            <line number="23" hits="0" branch="false"/>
-            <line number="28" hits="1" branch="false"/>
+            <line number="24" hits="1" branch="true" condition-coverage="50% (1/2)"/>
+            <line number="25" hits="1" branch="false"/>
+            <line number="26" hits="1" branch="false"/>
+            <line number="29" hits="0" branch="false"/>
+            <line number="34" hits="1" branch="false"/>
+            <line number="38" hits="0" branch="false"/>
           </lines>
         </class>
       </classes>
@@ -93,42 +101,42 @@
       <classes>
         <class name="CronService.ts" filename="src/service/CronService.ts" line-rate="0.8095" branch-rate="1">
           <methods>
-            <method name="(anonymous_6)" hits="1" signature="()V">
+            <method name="(anonymous_9)" hits="2" signature="()V">
               <lines>
-                <line number="22" hits="1"/>
-              </lines>
-            </method>
-            <method name="(anonymous_7)" hits="1" signature="()V">
-              <lines>
-                <line number="32" hits="1"/>
-              </lines>
-            </method>
-            <method name="(anonymous_8)" hits="0" signature="()V">
-              <lines>
-                <line number="36" hits="0"/>
-              </lines>
-            </method>
-            <method name="(anonymous_9)" hits="1" signature="()V">
-              <lines>
-                <line number="43" hits="1"/>
+                <line number="22" hits="2"/>
               </lines>
             </method>
             <method name="(anonymous_10)" hits="1" signature="()V">
               <lines>
-                <line number="53" hits="1"/>
+                <line number="32" hits="1"/>
               </lines>
             </method>
             <method name="(anonymous_11)" hits="0" signature="()V">
               <lines>
-                <line number="55" hits="0"/>
+                <line number="36" hits="0"/>
               </lines>
             </method>
             <method name="(anonymous_12)" hits="1" signature="()V">
               <lines>
+                <line number="43" hits="1"/>
+              </lines>
+            </method>
+            <method name="(anonymous_13)" hits="1" signature="()V">
+              <lines>
+                <line number="53" hits="1"/>
+              </lines>
+            </method>
+            <method name="(anonymous_14)" hits="0" signature="()V">
+              <lines>
+                <line number="55" hits="0"/>
+              </lines>
+            </method>
+            <method name="(anonymous_15)" hits="1" signature="()V">
+              <lines>
                 <line number="58" hits="1"/>
               </lines>
             </method>
-            <method name="(anonymous_13)" hits="0" signature="()V">
+            <method name="(anonymous_16)" hits="0" signature="()V">
               <lines>
                 <line number="59" hits="0"/>
               </lines>
@@ -138,10 +146,10 @@
             <line number="1" hits="1" branch="false"/>
             <line number="3" hits="1" branch="false"/>
             <line number="15" hits="1" branch="false"/>
-            <line number="26" hits="1" branch="false"/>
-            <line number="27" hits="1" branch="false"/>
-            <line number="28" hits="1" branch="false"/>
-            <line number="29" hits="1" branch="false"/>
+            <line number="26" hits="2" branch="false"/>
+            <line number="27" hits="2" branch="false"/>
+            <line number="28" hits="2" branch="false"/>
+            <line number="29" hits="2" branch="false"/>
             <line number="33" hits="1" branch="false"/>
             <line number="34" hits="1" branch="false"/>
             <line number="37" hits="0" branch="false"/>
