@@ -1,7 +1,13 @@
-import { CoreClient, ICoreKernelModule } from '@grandlinex/core';
+import {
+  CoreKernel,
+  CoreKernelExtension,
+  ICoreAction,
+  ICoreElement,
+  ICoreKernelModule,
+} from '@grandlinex/core';
 import { CronRegistration, CronService } from '../service/CronService.js';
 
-export default class CronClient extends CoreClient {
+export default class CronExtension extends CoreKernelExtension {
   service: CronService;
 
   constructor(mod: ICoreKernelModule<any, any, any, any, any>) {
@@ -26,5 +32,11 @@ export default class CronClient extends CoreClient {
 
   async stopCron(name: string) {
     return this.service.stopCron(name);
+  }
+
+  static getFromElement(el: ICoreElement<any>) {
+    return (el.getKernel() as CoreKernel<any>).getExtension<CronExtension>(
+      'cron',
+    )!;
   }
 }
