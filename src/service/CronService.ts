@@ -1,10 +1,10 @@
 import * as nodeCron from 'node-cron';
 
 import {
-  CoreService,
   CMap,
-  ICoreKernelModule,
+  CoreService,
   ICoreKernel,
+  ICoreKernelModule,
 } from '@grandlinex/core';
 
 export type CronRegistration = {

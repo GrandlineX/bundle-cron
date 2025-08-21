@@ -1,7 +1,6 @@
 import {
   CoreKernel,
   CoreKernelExtension,
-  ICoreAction,
   ICoreElement,
   ICoreKernelModule,
 } from '@grandlinex/core';

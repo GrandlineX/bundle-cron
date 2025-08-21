@@ -1,11 +1,5 @@
 import * as Path from 'path';
-import {
-  JestLib,
-  setupDevKernel,
-  TestContext,
-  TestKernel,
-  XUtil,
-} from '@grandlinex/core';
+import {JestLib, setupDevKernel, TestContext, TestKernel, XUtil,} from '@grandlinex/core';
 import CronModule from '../index.js';
 import CronClient from '../client/CronClient.js';
 
