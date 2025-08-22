@@ -1,7 +1,7 @@
-import CronClient from './client/CronClient.js';
+import CronExtension from './client/CronExtension.js';
 import CronModule from './CronModule.js';
 
-export * from './service/CronService.js';
+import CronService from './service/CronService.js';
 
-export { CronClient, CronModule };
+export { CronExtension, CronModule, CronService };
 export default CronModule;

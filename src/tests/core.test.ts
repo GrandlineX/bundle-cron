@@ -1,7 +1,7 @@
 import * as Path from 'path';
 import {JestLib, setupDevKernel, TestContext, TestKernel, XUtil,} from '@grandlinex/core';
 import CronModule from '../index.js';
-import CronClient from '../client/CronClient.js';
+import CronExtension from "../client/CronExtension.js";
 
 const appName = 'TestKernel';
 const appCode = 'tkernel';
@@ -42,16 +42,16 @@ describe('TestDatabase', () => {
   });
 });
 
-describe('MultiLang', () => {
+describe('Cron', () => {
   const mod = kernel.getChildModule('cron') as CronModule;
   test('translator', async () => {
-    const client = mod.getClient() as CronClient;
-    await client.registerCron({
+    const client = kernel.getExtension<CronExtension>("cron");
+    await client?.registerCron({
       eventName: 'test-trigger',
       name: 'test',
       cron: '* 1 * * * *',
     });
-    expect(await client.stopCron('test')).toBeTruthy();
+    expect(await client?.stopCron('test')).toBeTruthy();
   });
 });
 

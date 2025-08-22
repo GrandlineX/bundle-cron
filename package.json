@@ -1,6 +1,6 @@
 {
   "name": "@grandlinex/bundle-cron",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "description": "",
   "type": "module",
   "exports": {
@@ -44,13 +44,13 @@
   },
   "license": "BSD-3-Clause",
   "dependencies": {
-    "@grandlinex/core": "1.1.1",
+    "@grandlinex/core": "1.2.0",
     "node-cron": "4.2.1"
   },
   "devDependencies": {
-    "@types/node-cron": "3.0.11",
     "@types/jest": "29.5.14",
     "@types/node": "22.15.20",
+    "@types/node-cron": "3.0.11",
     "@typescript-eslint/eslint-plugin": "7.18.0",
     "@typescript-eslint/parser": "7.18.0",
     "eslint": "8.57.1",
