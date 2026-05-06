@@ -1,46 +1,27 @@
-import * as Path from 'path';
-import {JestLib, setupDevKernel, TestContext, TestKernel, XUtil,} from '@grandlinex/core';
+import {JestLib, setupDevKernel, TestContext, TestKernel } from '@grandlinex/core';
 import CronModule from '../index.js';
 import CronExtension from "../client/CronExtension.js";
 
 const appName = 'TestKernel';
 const appCode = 'tkernel';
-const [testPath] = XUtil.setupEnvironment(
-  [__dirname, '..'],
-  ['data', 'config'],
-);
-const pathToTranslation = Path.join(__dirname, 'res');
-const defaultLangKey = 'en';
 
-const [kernel] = TestContext.getEntity({
-  kernel: new TestKernel(appName, appCode, testPath, __dirname),
-  cleanUpPath: testPath,
-});
-const store = kernel.getConfigStore();
+
+const [kernel] = TestContext.getEntity(
+    {
+      kernel:new TestKernel(appName, appCode,__dirname),
+      cleanUp:true,
+      modLength:3
+    }
+);
 
 kernel.addModule(new CronModule(kernel));
 
 setupDevKernel(kernel);
 
-describe('Clean start', () => {
-  test('preload', async () => {
-    expect(kernel.getState()).toBe('init');
-  });
-  test('start kernel', async () => {
-    const result = await kernel.start();
-    expect(result).toBe(true);
-    expect(kernel.getModCount()).toBe(3);
-    expect(kernel.getState()).toBe('running');
-  });
-});
+
+JestLib.jestStart();
 JestLib.jestCore();
-describe('TestDatabase', () => {
-  test('get version', async () => {
-    const db = kernel.getChildModule('testModule')?.getDb();
-    const conf = await db?.getConfig('dbversion');
-    expect(conf?.c_value).not.toBeNull();
-  });
-});
+
 
 describe('Cron', () => {
   const mod = kernel.getChildModule('cron') as CronModule;
