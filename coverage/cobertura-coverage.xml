@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
-<coverage lines-valid="49" lines-covered="34" line-rate="0.6938" branches-valid="7" branches-covered="4" branch-rate="0.5714" timestamp="1780383551713" complexity="0" version="0.1">
+<coverage lines-valid="49" lines-covered="34" line-rate="0.6938" branches-valid="7" branches-covered="4" branch-rate="0.5714" timestamp="1785861554164" complexity="0" version="0.1">
   <sources>
     <source>/home/runner/work/bundle-cron/bundle-cron</source>
   </sources>
