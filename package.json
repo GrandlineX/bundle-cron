@@ -1,6 +1,6 @@
 {
   "name": "@grandlinex/bundle-cron",
-  "version": "3.0.0-alpha.2",
+  "version": "3.0.0-alpha.3",
   "description": "",
   "type": "module",
   "exports": {
@@ -47,7 +47,7 @@
     "node-cron": "4.6.0"
   },
   "peerDependencies": {
-    "@grandlinex/core": "3.0.0-alpha.2"
+    "@grandlinex/core": "3.0.0-alpha.3"
   },
   "devDependencies": {
     "@types/jest": "29.5.14",
