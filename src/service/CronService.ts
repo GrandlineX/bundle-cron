@@ -1,4 +1,8 @@
-import { CoreService, ICoreKernel, ICoreKernelModule } from '@grandlinex/core';
+import {
+  CoreService,
+  type ICoreKernel,
+  type ICoreKernelModule,
+} from '@grandlinex/core';
 import CronExtension from '../client/CronExtension.js';
 
 export default abstract class CronService extends CoreService<

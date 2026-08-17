@@ -1,6 +1,11 @@
-import {JestLib, setupDevKernel, TestContext, TestKernel } from '@grandlinex/core';
-import CronModule from '../index.js';
-import CronExtension from "../client/CronExtension.js";
+import {describe, test, expect} from "vitest"
+import {
+    TestLib,
+    setupDevKernel,
+    TestContext,
+    TestKernel,
+} from '@grandlinex/core/dev';
+import  { CronModule, CronExtension} from "../src";
 
 const appName = 'TestKernel';
 const appCode = 'tkernel';
@@ -19,12 +24,11 @@ kernel.addModule(new CronModule(kernel));
 setupDevKernel(kernel);
 
 
-JestLib.jestStart();
-JestLib.jestCore();
+TestLib.testStart();
+TestLib.testCore();
 
 
 describe('Cron', () => {
-  const mod = kernel.getChildModule('cron') as CronModule;
   test('translator', async () => {
     const client = kernel.getExtension<CronExtension>("cron");
     await client?.registerCron({
@@ -36,4 +40,4 @@ describe('Cron', () => {
   });
 });
 
-JestLib.jestEnd();
+TestLib.testEnd();

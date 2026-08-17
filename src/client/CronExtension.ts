@@ -1,4 +1,8 @@
-import { CMap, CoreKernelExtension, ICoreKernelModule } from '@grandlinex/core';
+import {
+  CMap,
+  CoreKernelExtension,
+  type ICoreKernelModule,
+} from '@grandlinex/core';
 import * as nodeCron from 'node-cron';
 
 export type CronRegistration = {
